@@ -71,9 +71,26 @@ term, err := net.Train(ctx, xData, yData)
 
 ## Predict or check the network
 
+Use function `Predict` data for each input neurons to produce data for each output neurons.
+
 ```go
 net.Predict([]float64{0, 0}) // should be ~0
 net.Predict([]float64{1, 0}) // should be ~1
 net.Predict([]float64{0, 1}) // should be ~1
 net.Predict([]float64{1, 1}) // should be ~0
+```
+
+## Import / export a network
+
+Use the json marshaler to read or write a network.
+
+```go
+// Export the network
+js, err := net.MarshalJSON()
+// if err != nil ...
+
+// Import the same network
+net2 := mlp.Network{}
+err2 := net2.UnmarshalJSON(js)
+// if err2 != nil ...
 ```
