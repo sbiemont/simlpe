@@ -1,4 +1,4 @@
-module simlpe
+module github.com/sbiemont/simlpe
 
 go 1.19
 

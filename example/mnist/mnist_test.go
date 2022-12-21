@@ -6,8 +6,9 @@ import (
 	"io/ioutil"
 	"math/rand"
 	"os"
-	"simlpe/mlp"
 	"testing"
+
+	"github.com/sbiemont/simlpe/mlp"
 
 	. "github.com/smartystreets/goconvey/convey"
 )

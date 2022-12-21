@@ -3,9 +3,10 @@ package xor
 import (
 	"context"
 	"math/rand"
-	"simlpe/mlp"
 	"testing"
 	"time"
+
+	"github.com/sbiemont/simlpe/mlp"
 
 	. "github.com/smartystreets/goconvey/convey"
 )
